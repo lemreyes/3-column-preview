@@ -1,0 +1,267 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end of reset */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 5% 10% 5%;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexand Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+a {
+  font-family: "Lexand Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 2rem;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  transition-duration: 0.4s;
+  border: 1px solid hsl(0, 0%, 95%);
+  width: 150px;
+  margin-top: 0.8rem;
+  margin-bottom: auto;
+  vertical-align: bottom;
+}
+
+section {
+  padding: 4rem 3rem 4rem 3rem;
+}
+
+#sedan {
+  flex: 1;
+  background-color: hsl(31, 77%, 52%);
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+#sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+}
+
+#suv {
+  flex: 1;
+  background-color: hsl(184, 100%, 22%);
+}
+
+#suv button {
+  color: hsl(184, 100%, 22%);
+}
+
+#suv button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+
+#luxury {
+  flex: 1;
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+#luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+}
+
+@media (min-width: 600px) {
+  #container {
+    flex-direction: row;
+    margin: 10% 20% 10% 20%;
+  }
+
+  p {
+    padding-bottom: 6rem;
+  }
+
+  #sedan {
+    position: relative;
+    border-top-right-radius: 0;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+
+  #sedan button {
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  #suv {
+    position: relative;
+  }
+
+  #suv button {
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  #luxury {
+    position: relative;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+
+  #luxury button {
+    position: absolute;
+    bottom: 4rem;
+  }
+}
