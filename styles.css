@@ -126,13 +126,19 @@ table {
 }
 /* end of reset */
 
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
 #container {
   display: flex;
   flex-direction: column;
   margin: 10% 5% 10% 5%;
 }
 
-h1 {
+.headline {
+  padding: 0;
+  white-space: nowrap;
   margin-top: 1.5rem;
   font-family: "Big Shoulders Display", sans-serif;
   font-weight: 700;
@@ -152,13 +158,12 @@ p {
 }
 
 a {
-  font-family: "Lexand Deca", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
 }
 
-button {
+.learn-more {
   border-radius: 2rem;
   border: none;
   background-color: hsl(0, 0%, 95%);
@@ -166,13 +171,12 @@ button {
   font-family: "Lexend Deca", sans-serif;
   transition-duration: 0.4s;
   border: 1px solid hsl(0, 0%, 95%);
-  width: 150px;
   margin-top: 0.8rem;
   margin-bottom: auto;
   vertical-align: bottom;
 }
 
-section {
+div {
   padding: 4rem 3rem 4rem 3rem;
 }
 
@@ -183,13 +187,16 @@ section {
   border-top-left-radius: 5%;
 }
 
-#sedan button {
+#sedan a {
   color: hsl(31, 77%, 52%);
 }
 
-#sedan button:hover {
+#sedan a:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+#sedan .learn-more:hover {
   background-color: hsl(31, 77%, 52%);
-  color: white;
 }
 
 #suv {
@@ -197,13 +204,20 @@ section {
   background-color: hsl(184, 100%, 22%);
 }
 
-#suv button {
+#suv a {
   color: hsl(184, 100%, 22%);
 }
 
-#suv button:hover {
+#suv a:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+#suv .learn-more {
+  color: hsl(184, 100%, 22%);
+}
+
+#suv .learn-more:hover {
   background-color: hsl(184, 100%, 22%);
-  color: white;
 }
 
 #luxury {
@@ -213,13 +227,20 @@ section {
   border-bottom-right-radius: 5%;
 }
 
-#luxury button {
+#luxury a {
   color: hsl(179, 100%, 13%);
 }
 
-#luxury button:hover {
+#luxury a:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+#luxury .learn-more {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury .learn-more:hover {
   background-color: hsl(179, 100%, 13%);
-  color: white;
 }
 
 @media (min-width: 600px) {
@@ -239,7 +260,7 @@ section {
     border-bottom-left-radius: 5%;
   }
 
-  #sedan button {
+  #sedan .learn-more {
     position: absolute;
     bottom: 4rem;
   }
@@ -248,7 +269,7 @@ section {
     position: relative;
   }
 
-  #suv button {
+  #suv .learn-more {
     position: absolute;
     bottom: 4rem;
   }
@@ -260,7 +281,7 @@ section {
     border-top-right-radius: 5%;
   }
 
-  #luxury button {
+  #luxury .learn-more {
     position: absolute;
     bottom: 4rem;
   }
