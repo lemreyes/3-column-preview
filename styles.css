@@ -212,10 +212,6 @@ div {
   color: hsl(0, 0%, 95%);
 }
 
-#suv .learn-more {
-  color: hsl(184, 100%, 22%);
-}
-
 #suv .learn-more:hover {
   background-color: hsl(184, 100%, 22%);
 }
@@ -233,10 +229,6 @@ div {
 
 #luxury a:hover {
   color: hsl(0, 0%, 95%);
-}
-
-#luxury .learn-more {
-  color: hsl(179, 100%, 13%);
 }
 
 #luxury .learn-more:hover {
